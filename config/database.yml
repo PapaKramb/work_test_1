@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: work_test_1_production
-  username: work_test_1
-  password: <%= ENV['WORK_TEST_1_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  # username: work_test_1
+  # password: <%= ENV['WORK_TEST_1_DATABASE_PASSWORD'] %>
